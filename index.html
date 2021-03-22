@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihal Anand - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            align-items: center;
+        }
+        .radial-gradient {
+            position: absolute;
+            /* display: none; */
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -10;
+
+            background-color: black;
+            background: radial-gradient(circle at bottom right, rgb(0, 112, 112), black, black);
+
+            
+        }
+        h1, h2 {
+            font-family: Questrial, sans-serif;
+            color: white;
+            margin: 0;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+        }
+
+        span {
+            margin-left: -6px;
+	-webkit-text-stroke: 1.5px white;
+	-webkit-text-fill-color: transparent;
+
+        }
+
+        header {
+            margin: 40vh auto
+        }
+
+        .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="radial-gradient"></div>
+<header>
+    <h1>Nihal <span>Anand</span></h1>
+    <h2>Front-End Web Developer</h2>
+</header>
+
+
+
+    <script src='https://unpkg.com/trianglify@^4/dist/trianglify.bundle.js'></script>
+
+    <script>
+window.addEventListener('mousemove', e => {
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
+  
+  mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+  mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+  
+  const rg = document.querySelector('.radial-gradient');
+  
+  rg.style.background = 'radial-gradient(circle at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgb(0, 112, 112), black, black)'
+  
+})
+
+
+        
+const pattern = trianglify({
+    width: document.documentElement.clientWidth,
+    height: document.documentElement.clientHeight,
+    xColors: ['222e', '111d', '000c'],
+    yColors: 'match',
+    cellSize: 80,
+    strokeWidth: 2,
+    variance: 1,
+    seed: 'My name is Nihal Anand, and I am a web developer.'
+    // colorFunction: trianglify.colorFunctions.sparkle()
+})
+
+const bgPattern = (pattern.toSVG());
+bgPattern.classList.add('bg');
+
+const addBG = (bg) => {
+    document.body.appendChild(bg);
+} 
+
+addBG(bgPattern);
+
+window.addEventListener('resize', () => {
+    const oldBg = document.querySelector('.bg')
+    document.body.removeChild(oldBg);
+    const pattern = trianglify({
+    width: document.documentElement.clientWidth,
+    height: document.documentElement.clientHeight,
+    xColors: ['222', '111d', '000c'],
+    yColors: 'match',
+    cellSize: 80,
+    strokeWidth: 2,
+    // colorFunction: trianglify.colorFunctions.sparkle()
+})
+
+const bgPattern = (pattern.toSVG());
+bgPattern.classList.add('bg');
+
+const addBG = (bg) => {
+    document.body.appendChild(bg);
+} 
+
+addBG(bgPattern);
+});
+
+    </script>
+</body>
+
+</html>

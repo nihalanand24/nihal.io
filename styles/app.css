@@ -226,9 +226,27 @@ h2 {
 
 header {
   margin: 30vh 0 35vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-header .text-content div {
+header .image {
+  width: 30%;
+}
+
+header .image img {
+  width: 100%;
+}
+
+header .text-content {
+  width: 70%;
+}
+
+header .text-content .name-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,7 +257,7 @@ header .text-content div {
       flex-wrap: wrap;
 }
 
-header .text-content div p {
+header .text-content .name-profile p {
   margin: 0 0 0 20px;
   font-size: 1.2rem;
   width: 343px;

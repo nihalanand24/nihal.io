@@ -37,13 +37,14 @@ window.addEventListener("mousemove", (event) => {
       // width: window.innerWidth,
       // height: document.documentElement.clientHeight,
       height: window.innerHeight,
-      xColors: ["222a", "1118", "0008", '1118', '222a'],
+      // xColors: ["222a", "1118", "0008", '1118', '222a'],
+      xColors: ["222a", "1118", "0008"],
       yColors: 'match',
       cellSize: 80,
       strokeWidth: 1.51,
       variance: 1,
       seed: "My name is Nihal Anand, and I am a web developer.",
-      // colorFunction: trianglify.colorFunctions.sparkle()
+      colorFunction: trianglify.colorFunctions.sparkle()
     });
 
     const bgPattern = pattern.toCanvas();
@@ -62,7 +63,4 @@ window.addEventListener("mousemove", (event) => {
 
   addTrianglifyBG();
 
-
-  window.addEventListener("resize", () => {
-    addTrianglifyBG();
-  });
+  window.addEventListener("resize", addTrianglifyBG);

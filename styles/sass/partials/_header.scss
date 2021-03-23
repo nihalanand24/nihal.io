@@ -4,13 +4,16 @@
       margin: 30vh 0 35vh 0;
       
       .text-content {
-          width: 50%;
+          // width: 70%;
           div {
               display: flex;
               align-items: flex-end;
+              flex-wrap: wrap;
               p {
                 margin: 0 0 0 20px; 
                 font-size: 1.2rem;
+                width: 343px;
+                min-width: 343px;
                 }
           }
           

@@ -228,10 +228,6 @@ header {
   margin: 30vh 0 35vh 0;
 }
 
-header .text-content {
-  width: 50%;
-}
-
 header .text-content div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,11 +235,15 @@ header .text-content div {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header .text-content div p {
   margin: 0 0 0 20px;
   font-size: 1.2rem;
+  width: 343px;
+  min-width: 343px;
 }
 
 header .text-content h1 {

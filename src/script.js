@@ -1,6 +1,6 @@
 
 
-window.addEventListener("mousemove", (e) => {
+window.addEventListener("mousemove", (event) => {
     width = document.documentElement.clientWidth,
     height = document.documentElement.clientHeight,
 
@@ -34,7 +34,9 @@ window.addEventListener("mousemove", (e) => {
 
     const pattern = trianglify({
       width: document.documentElement.clientWidth,
-      height: document.documentElement.clientHeight,
+      // width: window.innerWidth,
+      // height: document.documentElement.clientHeight,
+      height: window.innerHeight,
       xColors: ["222a", "1118", "0008", '1118', '222a'],
       yColors: 'match',
       cellSize: 80,

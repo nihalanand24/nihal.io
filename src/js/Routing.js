@@ -16,7 +16,7 @@ const loadAllPages = async () => {
 
 const main = async () => {
     await loadAllPages();
-    rootDiv.innerHTML = work;
+    rootDiv.innerHTML = home;
 
     routes = {
         '/': home,

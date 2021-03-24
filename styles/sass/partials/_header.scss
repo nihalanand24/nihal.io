@@ -66,28 +66,28 @@ header {
       }
     }
 
-    @media (max-width: 700px) {
-      justify-content: center;
-      align-items: center;
+    // @media (max-width: 700px) {
+    //   justify-content: center;
+    //   align-items: center;
 
-      h1 {
-        width: fit-content;
-        align-self: flex-start;
-        span {
-          display: inline;
-        }
-      }
+    //   h1 {
+    //     width: fit-content;
+    //     align-self: flex-start;
+    //     span {
+    //       display: inline;
+    //     }
+    //   }
 
-      h2 {
-        text-align: center;
-      }
+    //   h2 {
+    //     text-align: center;
+    //   }
 
-      p {
-        margin: 20px 0 0 5%;
-        order: 3;
-        width: 80%;
-      }
-    }
+    //   p {
+    //     margin: 20px 0 0 5%;
+    //     order: 3;
+    //     width: 80%;
+    //   }
+    // }
 
     // @media (min-width: 1600px) {
     //   h1 {

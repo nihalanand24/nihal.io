@@ -14,10 +14,17 @@ nav {
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            transition: color 0.5s;
+            transition: color 0.5s ease, background-color 0.5s;
 
-            &:hover {
+            &:hover,
+            &:focus {
                 color: #0dd;
+                background-color: #1118;
+                border-radius: 4px;
+            }
+            
+            &:focus {
+                outline: 1px solid;
             }
         }
     }

@@ -1,0 +1,22 @@
+.dev-icons {
+    margin-top: 24vh;
+    padding: 10px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // border: 4px solid #0dd;
+
+    i {
+        font-size: 4.2rem;
+        padding: 5px;
+        color: #077;
+        margin: 0 1.5%;
+        transition: all 0.5s ease-out;
+
+        &:hover {
+            color: #0dd;
+            text-shadow: 0 0 8px #0dd8;
+            transform: scale(1.4) translateY(-5px);
+        }
+    }
+}

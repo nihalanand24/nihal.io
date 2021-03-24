@@ -1,4 +1,13 @@
-  @import './partials/setup';
-  @import './partials/general';
-  @import './partials/header';
-  
+// import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Major+Mono+Display&family=Montserrat:wght@100;200;300;400;600&family=Roboto+Mono:wght@500&display=swap');
+
+// import flickity css setup
+@import './packages/flickity';
+
+// import partials
+@import './partials/setup';
+@import './partials/general';
+@import './partials/header';
+@import './partials/nav';
+@import './partials/project-cards';
+@import './partials/dev-icons';

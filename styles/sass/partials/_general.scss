@@ -2,29 +2,25 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-    color: white;
-    font-family: Questrial, sans-serif;
-    // background-color: #080808;
-    background-color: white;
-  }
+  color: white;
+  font-family: Montserrat, sans-serif;
+  background-color: white;
+}
 
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 424px) {
   .wrapper {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 90%;
   }
-
-  
-  h1,
-  h2 {
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 6rem;
-  }
-
-  h2 {
-    font-size: 2.8rem;
-  }
+}

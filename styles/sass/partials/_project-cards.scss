@@ -1,0 +1,36 @@
+.main-carousel {
+    display: none;
+}
+.project-card {
+    margin-top: 5vh;
+    padding: 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: background-color 0.7s ease;
+
+    background-color: #222;
+
+    width: 70%;
+
+    h3 {
+        font-size: 2.4rem;
+        font-variant-caps: small-caps;
+    }
+
+    span {
+        font-size: 2rem;
+
+        a {
+            color: white;
+        }
+    }
+
+    li {
+        font-size: 1.8rem;
+        list-style-type: square;
+    }
+
+    &.is-selected {
+        background-color: #555;
+    }
+}

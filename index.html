@@ -6,10 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nihal Anand - Web Developer</title>
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/Netscape_icon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
+
+  <!-- Import Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+
+
+
   <link rel="stylesheet" href="./styles/app.css">
 
 </head>
@@ -18,25 +22,70 @@
   <div class="radial-gradient"></div>
   <div class="wrapper">
     <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
       <div class="text-content">
-        <div class="name-profile">
-          <h1>Nihal <span>Anand</span></h1>
-          <p>
-            I create responsive, accessible and visually cohesive web applications utilizing advanced skills in HTML, (S)CSS, JavaScript, and React. My proficiency in C and Python gives me a strong base in fundamental programming concepts.
-          </p>
-        </div>
+        <h1>Nihal <span>Anand</span></h1>
+        <p>
+          <span>&lt;p&gt;</span>I am a Toronto-based web developer, specializing in creating responsive and
+          visually cohesive web applications.<span>&lt;/p&gt;</span>
+        </p>
         <h2>Front-End Web Developer</h2>
       </div>
-      <div class="image">
-        <img src="./assets/screenshot1.png" alt="mockup of this website on a macbook">
-      </div>
-    </header>
   </div>
+  <!-- <div class="image">
+        <img src="./assets/screenshot1.png" alt="mockup of this website on a macbook">
+      </div> -->
+  </header>
+  </div>
+  <main>
+<div class="wrapper">
+  <div class="dev-icons">
+    <i class="devicon-javascript-plain"></i>
+    <i class="devicon-react-original-wordmark"></i>
+    <i class="devicon-jquery-plain-wordmark"></i>
+    <i class="devicon-html5-plain-wordmark"></i>
+    <i class="devicon-css3-plain-wordmark"></i>
+    <i class="devicon-sass-original"></i>
+    <i class="devicon-firebase-plain-wordmark"></i>
+    <!-- <i class="devicon-git-plain-wordmark"></i>
+    <i class="devicon-github-original-wordmark"></i> -->
+    <i class="devicon-python-plain-wordmark"></i>
+    <i class="devicon-c-line"></i>
+    <!-- <i class="devicon-photoshop-line"></i>
+    <i class="devicon-premierepro-plain"></i> -->
+  </div>
+</div>
 
 
+    <div class="main-carousel">
+      <div class="project-card carousel-cell">
+        <h3>Project Name</h3>
+        <span><a href="#">GitHub</a> | <a href="#">Live</a></span>
+        <ul>
+          <li>
+            <p>What does the project do?</p>
+          </li>
+          <li>
+            <p>How does it do this?</p>
+          </li>
+        </ul>
+      </div>
+  </main>
 
 
-  <script src="https://unpkg.com/trianglify@^4/dist/trianglify.bundle.js"></script>
+  <!-- Import Trianglify JS -->
+  <script src="./src/packages/tranglify.bundle.js"></script>
+
+  <!-- Import Flickity JS -->
+  <script src="./src/packages/flickity.pkgd.min.js"></script>
+
 
   <script src="./src/script.js"></script>
 </body>

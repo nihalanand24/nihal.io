@@ -1,0 +1,41 @@
+<div class="wrapper">
+    <div class="work">
+        <h2>Work</h2>
+
+        <div class="main-carousel">
+            <div class="project-card carousel-cell">
+                <h3>Project Name</h3>
+                <span><a href="#">GitHub</a> | <a href="#">Live</a></span>
+                <ul>
+                    <li>
+                        <p>What does the project do?</p>
+                    </li>
+                    <li>
+                        <p>How does it do this?</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-card carousel-cell">
+                <h3>Project Name</h3>
+                <span><a href="#">GitHub</a> | <a href="#">Live</a></span>
+                <ul>
+                    <li>
+                        <p>What does the project do?</p>
+                    </li>
+                    <li>
+                        <p>How does it do this?</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Import Flickity JS -->
+<script src="../src/js/packages/flickity.pkgd.min.js"></script>
+<script>
+    const flickityConfig = new Flickity('.main-carousel', {
+        contain: true,
+        wrapAround: true
+    });
+</script>

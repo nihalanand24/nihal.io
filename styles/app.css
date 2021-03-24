@@ -383,86 +383,6 @@ body {
   }
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header h1,
-header h1 span {
-  margin: 0;
-}
-
-header nav {
-  height: 120px;
-  width: 100%;
-}
-
-header .text-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 10vh;
-}
-
-header .text-content h1 {
-  font-family: 'Major Mono Display', sans-serif;
-  text-transform: lowercase;
-  padding-right: 20px;
-  letter-spacing: -5px;
-  font-size: calc(3.5rem + 3.7vw);
-  text-align: right;
-  line-height: 0.9;
-}
-
-header .text-content h1 span {
-  font-size: calc(1em - 1.5px);
-  margin: 5px 0 0 0;
-  display: block;
-  -webkit-text-stroke: 1.5px white;
-  -webkit-text-fill-color: transparent;
-}
-
-header .text-content h2 {
-  font-size: calc(1.9rem + 2.5vw);
-  font-weight: 400;
-  margin-top: 10px;
-  letter-spacing: 2px;
-  color: #0dd;
-  width: 100%;
-  text-align: center;
-}
-
-header .text-content p {
-  font-size: calc(0.9rem + 0.9vw);
-  width: 45%;
-  font-weight: 200;
-}
-
-header .text-content p span {
-  font-weight: 100;
-  color: #0dd;
-  font-size: 0.8em;
-}
-
 .trianglify-bg {
   /* display: none; */
   position: absolute;
@@ -498,43 +418,114 @@ header .text-content p span {
 }
 
 nav {
+  margin-top: 40px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
-  margin-top: 20px;
 }
 
-nav ul a {
+nav ul li a {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 2rem;
+  font-size: calc(1rem + 0.5vw);
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px;
+  margin: 20px;
   -webkit-transition: color 0.5s ease, background-color 0.5s;
   transition: color 0.5s ease, background-color 0.5s;
 }
 
-nav ul a:hover, nav ul a:focus {
+nav ul li a:hover, nav ul li a:focus {
   color: #0dd;
   background-color: #1118;
   border-radius: 4px;
 }
 
-nav ul a:focus {
+nav ul li a:focus {
   outline: 1px solid;
 }
 
-.main-carousel {
-  display: none;
+nav ul li:first-child a {
+  margin-left: 0;
+}
+
+nav ul li:last-child a {
+  margin-right: 0;
+}
+
+.text-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 10vh;
+}
+
+.text-content h1 {
+  margin: 0;
+  font-family: 'Major Mono Display', sans-serif;
+  text-transform: lowercase;
+  padding-right: 20px;
+  letter-spacing: -5px;
+  font-size: calc(3.5rem + 3.7vw);
+  text-align: right;
+  line-height: 0.9;
+}
+
+.text-content h1 span {
+  font-size: calc(1em - 1.5px);
+  margin: 5px 0 0 0;
+  display: block;
+  -webkit-text-stroke: 1.5px white;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-content h2 {
+  font-size: calc(1.9rem + 2.5vw);
+  font-weight: 400;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  color: #0dd;
+  width: 100%;
+  text-align: center;
+}
+
+.text-content p {
+  font-size: calc(0.9rem + 0.9vw);
+  width: 45%;
+  font-weight: 200;
+}
+
+.text-content p span {
+  font-weight: 100;
+  color: #0dd;
+  font-size: 0.8em;
 }
 
 .project-card {
@@ -571,26 +562,25 @@ nav ul a:focus {
 }
 
 .dev-icons {
-  margin-top: 24vh;
-  padding: 10px 40px;
+  margin: 0 auto;
+  padding-top: 24vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .dev-icons i {
-  font-size: 4.2rem;
-  padding: 5px;
+  font-size: calc(2rem + 2vw);
   color: #077;
-  margin: 0 1.5%;
-  -webkit-transition: color 0.5s ease-out, text-shadow 0.5s ease-out, -webkit-transform 0.5s ease-out;
-  transition: color 0.5s ease-out, text-shadow 0.5s ease-out, -webkit-transform 0.5s ease-out;
-  transition: transform 0.5s ease-out, color 0.5s ease-out, text-shadow 0.5s ease-out;
-  transition: transform 0.5s ease-out, color 0.5s ease-out, text-shadow 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  margin: 0 2%;
+  -webkit-transition: color 0.4s, text-shadow 0.4s, -webkit-transform 0.4s;
+  transition: color 0.4s, text-shadow 0.4s, -webkit-transform 0.4s;
+  transition: transform 0.4s, color 0.4s, text-shadow 0.4s;
+  transition: transform 0.4s, color 0.4s, text-shadow 0.4s, -webkit-transform 0.4s;
 }
 
 .dev-icons i:hover {

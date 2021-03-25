@@ -394,14 +394,15 @@ body {
 }
 
 .trianglify-overlay {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
   background-color: #080808;
-  background: -webkit-gradient(linear, left bottom, left top, from(#080808), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(0deg, #080808 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#0004), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, #0004 0%, rgba(255, 255, 255, 0) 100%);
   z-index: -10;
 }
 
@@ -526,6 +527,87 @@ nav ul li:last-child a {
   font-weight: 100;
   color: #0dd;
   font-size: 0.8em;
+}
+
+.work {
+  padding-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.work .project {
+  margin-bottom: 40px;
+  width: 50%;
+  min-width: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.work .project:hover, .work .project:focus-within {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.work .project:hover > p, .work .project:focus-within > p {
+  visibility: visible;
+  opacity: 1;
+}
+
+.work .project button {
+  text-align: left;
+  background: transparent;
+  color: inherit;
+  border: none;
+  display: block;
+}
+
+.work .project button h3 {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.work .project p {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 5px;
+  font-size: 1.6rem;
+  color: #0dd;
+  font-weight: 400;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.work .project:nth-child(2n) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+}
+
+.work .project:nth-child(2n) button {
+  text-align: right;
+}
+
+.work .project:last-child {
+  margin-bottom: 0;
 }
 
 .project-card {

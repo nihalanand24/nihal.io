@@ -1,4 +1,10 @@
-const home = /*html*/ `
+const Router = {
+  content: {}
+};
+
+Router.root = document.getElementById("root");
+
+Router.content.home = /*html*/ `
 <div class="wrapper">
     <div class="text-content">
         <h1>Nihal <span>Anand</span></h1>
@@ -23,6 +29,39 @@ const home = /*html*/ `
         <!-- <i class="devicon-photoshop-line"></i>
     <i class="devicon-premierepro-plain"></i> -->
     </div>
-</div>`;
+</div>
+`;
 
-export default home;
+Router.content.work = /*html*/ `
+<div class="wrapper">
+<div class="work">
+  <div class="project">
+    <h2>Keanu and Who?</h2>
+    <p>Uses React and data from tmdb API to check if any two actors have acted together</p>
+  </div>
+  <div class="project">
+    <h2>Friendly Weather App</h2>
+  </div>
+  <div class="project">
+    <h2>Let's Get Cooking!</h2>
+  </div>
+  <div class="project">
+    <h2>The Film Factory</h2>
+  </div>
+  <div class="project">
+    <h2>Credit Card Checker</h2>
+  </div>
+  <div class="project">
+    <h2>The Portfolio Project</h2>
+  </div>
+</div>
+</div>
+</div>
+`;
+
+Router.routes = {
+  "/": Router.content.home,
+  "/work": Router.content.work,
+};
+
+export default Router;

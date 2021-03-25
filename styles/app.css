@@ -577,15 +577,15 @@ nav ul li:last-child a {
   font-size: calc(2rem + 2vw);
   color: #077;
   margin: 0 2%;
-  -webkit-transition: color 0.4s, text-shadow 0.4s, -webkit-transform 0.4s;
-  transition: color 0.4s, text-shadow 0.4s, -webkit-transform 0.4s;
-  transition: transform 0.4s, color 0.4s, text-shadow 0.4s;
-  transition: transform 0.4s, color 0.4s, text-shadow 0.4s, -webkit-transform 0.4s;
+  -webkit-transition: color 0.4s, text-shadow 0.4s, -webkit-transform 0.4s ease;
+  transition: color 0.4s, text-shadow 0.4s, -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease, color 0.4s, text-shadow 0.4s;
+  transition: transform 0.4s ease, color 0.4s, text-shadow 0.4s, -webkit-transform 0.4s ease;
 }
 
 .dev-icons i:hover {
   color: #0dd;
   text-shadow: 0 0 8px #0dd8;
-  -webkit-transform: scale(1.3) translateY(-5px);
-          transform: scale(1.3) translateY(-5px);
+  -webkit-transform: scale(1.2) translateY(-4px);
+          transform: scale(1.2) translateY(-4px);
 }

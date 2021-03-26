@@ -4,6 +4,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    overflow-x: auto;
+    scrollbar-width: none;
     // border: 4px solid #0dd;
 
     i {

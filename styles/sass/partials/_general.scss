@@ -14,7 +14,14 @@ html {
 body {
   color: white;
   font-family: Montserrat, sans-serif;
-  background-color: white;
+  background-color: #080808;
+}
+
+main {
+  height: 80vh;
+  // overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .wrapper {

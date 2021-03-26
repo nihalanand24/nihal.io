@@ -1,0 +1,51 @@
+.about {
+  h2,
+  p {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-variant: small-caps;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+
+.headshot {
+    // display: block;
+    position: relative;
+    width: 250px;
+    height: auto;
+    float: right;
+    
+    svg {
+        width: 100%;
+        // object-fit: contain;
+    }
+    img {
+        position: absolute;
+        top: 8%;
+        right: 18%;
+        width: 75%;
+        object-fit: contain;
+        filter: grayscale(100%);
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+
+  h2 {
+      text-align: center;
+  }
+
+  .headshot {
+      float: none;
+    margin: 0 auto;
+  }
+}

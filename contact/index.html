@@ -37,30 +37,30 @@
   </main>
 
   <div class="wrapper">
-    <footer>
-        <ul>
-          <li>
-            <a href="https://twitter.com/nihalanand24" target="/_blank">
-              <i class="devicon-twitter-original"></i>
-              twitter
-            </a>
-          </li>
-          <li>
-            <a href="https:linkedin.com/in/nihalanand" target="/_blank">
-              <i class="devicon-linkedin-plain"></i>
-              linkedin
-            </a>
-          </li>
-          <li>
-            
-            <a href="https://github.com/nihalanand24" target="/_blank">
-              <i class="devicon-github-original"></i>
-              github
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+  <footer>
+      <ul>
+        <li>
+          <a href="https://twitter.com/nihalanand24" target="/_blank">
+            <i class="devicon-twitter-original"></i>
+            twitter
+          </a>
+        </li>
+        <li>
+          <a href="https:linkedin.com/in/nihalanand" target="/_blank">
+            <i class="devicon-linkedin-plain"></i>
+            linkedin
+          </a>
+        </li>
+        <li>
+          
+          <a href="https://github.com/nihalanand24" target="/_blank">
+            <i class="devicon-github-original"></i>
+            github
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
 
   <!-- Import Trianglify JS -->
   <script src="/src/js/packages/tranglify.bundle.js"></script>
@@ -68,15 +68,13 @@
   <!-- Import External JavaScript -->
   <script type='module' src="/src/js/app.js"></script>
 
-  
   <script>
-    const page = '/pages/work.html';
+    const page = '/pages/contact.html';
     const root = document.getElementById('root');
     fetch(page)
-    .then(res => res.text())
-    .then(htmlRes => root.innerHTML = htmlRes)
-    .then(data => addProjectLinks());
-    </script>
+      .then(res => res.text())
+      .then(htmlRes => root.innerHTML = htmlRes);
+  </script>
 
 
 </body>

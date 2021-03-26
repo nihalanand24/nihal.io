@@ -437,8 +437,8 @@ nav ul li:last-child a {
   text-transform: uppercase;
   background-color: #111;
   margin-right: 10px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: color 0.3s ease, border 0.3s ease;
+  transition: color 0.3s ease, border 0.3s ease;
 }
 
 .work a:hover, .work a:focus {
@@ -822,7 +822,7 @@ button {
 
 .dev-icons {
   margin: 0 auto;
-  padding-top: 24vh;
+  padding-top: 15vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

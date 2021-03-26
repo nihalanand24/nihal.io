@@ -11,7 +11,7 @@
     text-transform: uppercase;
     background-color: #111;
     margin-right: 10px;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease, border 0.3s ease;
     
     &:hover,
     &:focus {

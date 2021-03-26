@@ -30,7 +30,6 @@ root.addEventListener('DOMContentLoaded', () => {
 
 const isWorkPage = (pathName) => {
     if (pathName.slice(0, 5) === '/work') {
-        console.log('this is the work page!')
         addProjectLinks();
     } else {
         return false;

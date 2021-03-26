@@ -15,10 +15,7 @@
       font-size: calc(3.5rem + 3.7vw);
       text-align: right;
       line-height: 0.9;
-      // font-weight: bold;
-      // font-variant-caps: small-caps;
       span {
-        // letter-spacing: -5px;
         font-size: calc(1em - 4px);
         margin: 5px 0 0 0;
         display: block;
@@ -38,7 +35,7 @@
     }
 
     p {
-      font-size: calc(0.9rem + 0.9vw);
+      font-size: calc(1rem + 0.8vw);
       width: 45%;
       font-weight: 200;
       span {
@@ -48,41 +45,27 @@
       }
     }
 
-    // @media (max-width: 700px) {
-    //   justify-content: center;
-    //   align-items: center;
+    @media (max-width: 760px) {
+      h1 {
+        text-align: center;
+        span {
+          font-size: 1em;
+          display: inline;
+          margin-left: -10px;
 
-    //   h1 {
-    //     width: fit-content;
-    //     align-self: flex-start;
-    //     span {
-    //       display: inline;
-    //     }
-    //   }
+        }
+      }
+      p {
+        width: 90%;
+        order: 3;
+        font-size: 1.6rem;
+      }
+    }
+    
+    @media (max-width: 450px) {
+      h1 {
+        font-size: 3.9rem;
+      }
+    }
 
-    //   h2 {
-    //     text-align: center;
-    //   }
-
-    //   p {
-    //     margin: 20px 0 0 5%;
-    //     order: 3;
-    //     width: 80%;
-    //   }
-    // }
-
-    // @media (min-width: 1600px) {
-    //   h1 {
-    //     font-size: 9.9rem;
-    //   }
-
-    //   h2 {
-    //     font-size: 4.7rem;
-    //   }
-
-    //   p {
-    //     font-size: 3.25rem;
-    //   }
-
-    // }
   }

@@ -1,53 +1,73 @@
 .contact {
-    form {
-        margin-top: 3vh;
-        font-size: 1.6rem;
-        color: white;
-        ::placeholder {
-            color: #0aa;
-            opacity: 1;
-        }
-        text-align: center;
-        
-        button,
-        input,
-        textarea {
-            background-color: #222a;
-            outline: none;
-            border: none;
-        }
-
-        input,
-        textarea {
-            color: white;
-            border-bottom: 1px solid #0dd;
-            border-right: 1px solid #0dd;
-            padding: 20px;
-        }
-
-        input {
-            width: 49.5%;
-            margin: 1% 0;
-        }
-
-        textarea {
-            display: block;
-            resize: none;
-            width: 100%;
-            height: 50vh;
-        }
-
-        button {
-            margin-top: 30px;
-            color: #0dd;
-            padding: 10px 40px;
-            border: 1px solid #0dd;
-        }
-
+  form {
+    margin-top: 3vh;
+    font-size: 1.6rem;
+    color: white;
+    ::placeholder {
+      color: #0aa;
+      opacity: 1;
     }
+    text-align: center;
+
+    input,
+    textarea {
+      background-color: #222a;
+      outline: none;
+      border: none;
+    }
+
+    input,
+    textarea {
+      color: white;
+      border-bottom: 1px solid #0dd;
+      border-right: 1px solid #0dd;
+      padding: 20px;
+    }
+
+    input {
+      width: 49.5%;
+      margin: 1% 0;
+    }
+
+    textarea {
+      display: block;
+      resize: none;
+      width: 100%;
+      height: 50vh;
+    }
+
+    button {
+      background-color: transparent;
+      margin-top: 30px;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      color: #0dd;
+      padding: 10px 40px;
+      border: 1px solid #0dd;
+
+      &:hover,
+      &:focus {
+        background-color: #222a;
+    }
+    }
+  }
+
+  @media (max-width: 480px) {
+    form {
+      .input-row {
+        flex-direction: column;
+        margin-bottom: 1%;
+      }
+      input {
+        display: block;
+        width: 100%;
+      }
+    }
+    flex-direction: column;
+  }
 }
 
 .input-row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }

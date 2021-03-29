@@ -1,17 +1,10 @@
 .about {
-  h2,
+
   p {
     margin-bottom: 10px;
-  }
-
-  h2 {
-    font-size: 3rem;
-    font-weight: 400;
-    font-variant: small-caps;
-  }
-
-  p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
   }
 
   article a {
@@ -22,7 +15,6 @@
 
 
 .headshot {
-    // display: block;
     position: relative;
     width: 250px;
     height: auto;
@@ -30,7 +22,6 @@
     
     svg {
         width: 100%;
-        // object-fit: contain;
     }
     img {
         position: absolute;
@@ -44,10 +35,6 @@
 }
 
 @media (max-width: 480px) {
-
-  h2 {
-      text-align: center;
-  }
 
   .headshot {
       float: none;

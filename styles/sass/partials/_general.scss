@@ -3,12 +3,27 @@
   padding: 0;
 }
 
-a {
-  color: white;
-}
-
 html {
   font-size: 62.5%;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-variant: small-caps;
+  margin: 20px 0 50px 0;
+  text-align: center;
+
+  @media (max-width: 480px) {
+  }
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  color: white;
 }
 
 body {
@@ -20,19 +35,18 @@ body {
 main {
   height: 80vh;
   overflow-y: auto;
-  scrollbar-width: none;
 }
 
 .wrapper {
   width: 60%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  
+
   @media (max-width: 1200px) {
     width: 80%;
   }
-  
+
   @media (max-width: 650px) {
-      width: 90%;  
+    width: 90%;
   }
 }

@@ -493,7 +493,6 @@ nav ul li:last-child a {
 .work .project {
   position: relative;
   padding: 10px 0;
-  margin: 5px 0;
   z-index: 1;
 }
 
@@ -525,6 +524,7 @@ nav ul li:last-child a {
   right: 0;
   bottom: 0;
   left: 0;
+  margin-bottom: 10px;
   position: absolute;
   z-index: -1;
 }
@@ -610,7 +610,6 @@ nav ul li:last-child a {
 
 .work label {
   display: inline-block;
-  font-size: 2.4rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
@@ -618,7 +617,8 @@ nav ul li:last-child a {
 }
 
 .work label h3 {
-  font-weight: 400;
+  font-size: 2.4rem;
+  font-weight: 600;
   display: inline;
 }
 
@@ -712,7 +712,7 @@ nav ul li:last-child a {
 
 @media (max-width: 575px) {
   .work .project {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .work label {
     font-size: 1.9rem;
@@ -749,6 +749,9 @@ nav ul li:last-child a {
 }
 
 @media (hover: none) {
+  .work .project {
+    margin-bottom: 10px;
+  }
   .work label {
     color: #0dd;
   }
@@ -760,7 +763,7 @@ nav ul li:last-child a {
 
 .about p {
   margin-bottom: 10px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 0.1px;
 }

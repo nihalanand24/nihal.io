@@ -164,12 +164,13 @@
       max-height: 1000px;
       opacity: 1;
     }
-
+    
     ~ .details {
       display: flex;
       padding-top: 10px;
       flex-direction: row;
       justify-content: space-between;
+      margin-bottom: 10px;
 
       * {
         visibility: visible;

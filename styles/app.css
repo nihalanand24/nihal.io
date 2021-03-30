@@ -682,6 +682,7 @@ nav ul li:last-child a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .work input:checked ~ .details * {
@@ -848,6 +849,7 @@ nav ul li:last-child a {
 .contact form input {
   width: 49.5%;
   margin: 1% 0;
+  border-radius: 0;
 }
 
 .contact form textarea {

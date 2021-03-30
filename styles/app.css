@@ -940,7 +940,7 @@ footer li {
   text-align: center;
   list-style: none;
   font-size: 1.6rem;
-  margin: 0 10px;
+  margin: 0 1.2vw;
 }
 
 footer li a {
@@ -950,7 +950,7 @@ footer li a {
   transition: color 0.3s ease;
 }
 
-footer li a i {
+footer li a .far, footer li a i {
   display: block;
   padding: 4px 0;
   font-size: 2rem;

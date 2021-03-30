@@ -37,18 +37,18 @@ main {
   overflow-y: scroll;
   
   scrollbar-width: thin;
-  scrollbar-color: #0778 #2228;
+  scrollbar-color: rgba(0, 119, 119, 0.55) rgba(34, 34, 34, 0.55);
 
   &::-webkit-scrollbar {
     width: 6px;
   }
 
   &::-webkit-scrollbar-track {
-    background: #2228;
+    background: rgba(34, 34, 34, 0.55);
   }
 
   &::-webkit-scrollbar-thumb {
-    border: 3px solid #0778;
+    border: 3px solid rgba(0, 119, 119, 0.55);
   }
 }
 

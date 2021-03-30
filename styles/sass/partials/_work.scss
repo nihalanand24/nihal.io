@@ -104,6 +104,7 @@
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease;
+    color: white;
   }
 
   label {
@@ -123,7 +124,11 @@
       transform: translateY(-5px);
       transition: all 0.3s ease;
 
-      ~ .one-liner {
+      // ~ .one-liner {
+      //   visibility: visible;
+      //   opacity: 1;
+      // }
+      .one-liner {
         visibility: visible;
         opacity: 1;
       }
@@ -147,11 +152,16 @@
       img {
         transform: translateY(0) rotateX(180deg);
       }
+
+      .one-liner {
+        visibility: visible;
+        max-height: 1000px;
+        opacity: 1;
+      }
     }
 
     ~ .details,
-    ~ .project--background,
-    ~ .one-liner {
+    ~ .project--background {
       padding-left: 20px;
       padding-right: 20px;
       visibility: visible;

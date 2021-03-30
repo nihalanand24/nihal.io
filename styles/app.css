@@ -278,7 +278,6 @@ main::-webkit-scrollbar-thumb {
 }
 
 .trianglify-bg {
-  /* display: none; */
   position: absolute;
   width: 100%;
   top: 0;
@@ -300,14 +299,13 @@ main::-webkit-scrollbar-thumb {
 }
 
 .radial-gradient {
-  /* display: none; */
   position: absolute;
   top: 0px;
   left: 0px;
   height: 100vh;
   width: 100%;
   z-index: -30;
-  /* background-color: black; */
+  background-color: black;
   background: radial-gradient(circle at top right, #006363, black, black, black, black);
 }
 
@@ -597,6 +595,7 @@ nav ul li:last-child a {
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: white;
 }
 
 .work label {
@@ -621,7 +620,7 @@ nav ul li:last-child a {
   transition: all 0.3s ease;
 }
 
-.work label:hover ~ .one-liner {
+.work label:hover .one-liner {
   visibility: visible;
   opacity: 1;
 }
@@ -646,9 +645,14 @@ nav ul li:last-child a {
           transform: translateY(0) rotateX(180deg);
 }
 
+.work input:checked ~ label .one-liner {
+  visibility: visible;
+  max-height: 1000px;
+  opacity: 1;
+}
+
 .work input:checked ~ .details,
-.work input:checked ~ .project--background,
-.work input:checked ~ .one-liner {
+.work input:checked ~ .project--background {
   padding-left: 20px;
   padding-right: 20px;
   visibility: visible;

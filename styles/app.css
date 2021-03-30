@@ -244,7 +244,7 @@ main {
   height: 80vh;
   overflow-y: scroll;
   scrollbar-width: thin;
-  scrollbar-color: #0778 #2228;
+  scrollbar-color: rgba(0, 119, 119, 0.55) rgba(34, 34, 34, 0.55);
 }
 
 main::-webkit-scrollbar {
@@ -252,11 +252,11 @@ main::-webkit-scrollbar {
 }
 
 main::-webkit-scrollbar-track {
-  background: #2228;
+  background: rgba(34, 34, 34, 0.55);
 }
 
 main::-webkit-scrollbar-thumb {
-  border: 3px solid #0778;
+  border: 3px solid rgba(0, 119, 119, 0.55);
 }
 
 .wrapper {
@@ -370,7 +370,7 @@ nav ul li a {
 
 nav ul li a:hover, nav ul li a:focus {
   color: #0dd;
-  background-color: #1118;
+  background-color: rgba(17, 17, 17, 0.55);
   border-radius: 4px;
 }
 
@@ -517,7 +517,7 @@ nav ul li:last-child a {
 }
 
 .work .project--background {
-  background-color: #3338;
+  background-color: rgba(34, 34, 34, 0.67);
   border-bottom: 1px solid #0dd;
   border-right: 1px solid #0dd;
   top: 0;
@@ -828,7 +828,7 @@ nav ul li:last-child a {
 
 .contact form input,
 .contact form textarea {
-  background-color: #222a;
+  background-color: rgba(34, 34, 34, 0.67);
   outline: none;
   border: none;
 }
@@ -968,7 +968,7 @@ nav ul li:last-child a {
 
 .dev-icons i:hover {
   color: #0dd;
-  text-shadow: 0 0 8px #0dd8;
+  text-shadow: 0 0 8px rgba(0, 221, 221, 0.55);
   -webkit-transform: scale(1.2) translateY(-4px);
           transform: scale(1.2) translateY(-4px);
 }

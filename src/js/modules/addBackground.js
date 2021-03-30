@@ -31,7 +31,7 @@ const addBackground = () => {
             strokeWidth: 1,
             variance: 1,
             seed: "My name is Nihal Anand, and I am a web developer.",
-            colorFunction: trianglify.colorFunctions.sparkle()
+            // colorFunction: trianglify.colorFunctions.sparkle()
         });
 
         const bgPattern = pattern.toCanvas();
@@ -41,8 +41,10 @@ const addBackground = () => {
         bgOverlay.classList.add('trianglify-overlay');
 
         const addBG = (bg, overlay) => {
-            document.body.appendChild(bg);
-            document.body.appendChild(overlay);
+            // document.body.appendChild(bg);
+            // document.body.appendChild(overlay);
+            document.body.prepend(overlay);
+            document.body.prepend(bg);
         };
         addBG(bgPattern, bgOverlay);
     }

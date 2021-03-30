@@ -9,7 +9,8 @@
   <base href="/">
   <link rel="shortcut icon" href="/assets/Netscape_icon.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="/styles/app.css">
 </head>
 
@@ -27,9 +28,7 @@
       </nav>
     </header>
   </div>
-
   <main id="root"></main>
-
   <div class="wrapper">
     <footer>
       <ul>
@@ -52,6 +51,12 @@
           </a>
         </li>
         <li>
+          <a href="https://nihalanand24.medium.com/">
+            <i class="fab fa-medium"></i>
+            blog
+          </a>
+        </li>
+        <li>
           <a href="#">
             <i class="fas fa-file-pdf"></i>
             resume
@@ -60,9 +65,7 @@
       </ul>
     </footer>
   </div>
-
   <script type='module' src="/src/js/app.js"></script>
-
   <script>
     const page = '/pages/home.html';
     const root = document.getElementById('root');
@@ -70,7 +73,6 @@
       .then(res => res.text())
       .then(htmlRes => root.innerHTML = htmlRes);
   </script>
-
 </body>
 
 </html>

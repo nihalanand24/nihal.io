@@ -1010,18 +1010,20 @@ footer ul {
 footer li {
   text-align: center;
   list-style: none;
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   margin: 0 1.2vw;
 }
 
 footer li a {
-  color: #666;
+  color: #777;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
-footer li a .fas, footer li a i {
+footer li a .fas,
+footer li a .fab,
+footer li a i {
   display: block;
   padding: 4px 0;
   font-size: 2rem;

@@ -6,7 +6,7 @@ addBackground();
 
 Router.init();
 
-console.log('removed sparkle function, and prepended backgrounds');
+console.log('added compatible gradient overlay from colorzilla');
 
 const root = document.getElementById("root");
 

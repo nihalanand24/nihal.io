@@ -5,7 +5,6 @@
   .project {
     position: relative;
     padding: 10px 0;
-    margin: 5px 0;
     z-index: 1;
 
     &:first-child {
@@ -34,6 +33,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    margin-bottom: 10px;
     position: absolute;
     z-index: -1;
   }
@@ -109,13 +109,13 @@
 
   label {
     display: inline-block;
-    font-size: 2.4rem;
     transition: all 0.3s ease;
     position: relative;
     cursor: pointer;
-
+    
     h3 {
-      font-weight: 400;
+      font-size: 2.4rem;
+      font-weight: 600;
       display: inline;
     }
 
@@ -124,10 +124,6 @@
       transform: translateY(-5px);
       transition: all 0.3s ease;
 
-      // ~ .one-liner {
-      //   visibility: visible;
-      //   opacity: 1;
-      // }
       .one-liner {
         visibility: visible;
         opacity: 1;
@@ -198,7 +194,7 @@
 
   @media (max-width: 575px) {
     .project {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     label {
@@ -235,6 +231,10 @@
   }
 
   @media (hover: none) {
+    .project {
+      margin-bottom: 10px;
+    }
+
     label {
       color: #0dd;
     }

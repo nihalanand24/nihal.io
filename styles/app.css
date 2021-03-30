@@ -242,7 +242,21 @@ body {
 
 main {
   height: 80vh;
-  overflow-y: auto;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #0778 #2228;
+}
+
+main::-webkit-scrollbar {
+  width: 6px;
+}
+
+main::-webkit-scrollbar-track {
+  background: #2228;
+}
+
+main::-webkit-scrollbar-thumb {
+  border: 3px solid #0778;
 }
 
 .wrapper {
@@ -386,7 +400,7 @@ nav ul li:last-child a {
   font-family: 'Major Mono Display', sans-serif;
   text-transform: lowercase;
   padding-right: 20px;
-  letter-spacing: -5px;
+  letter-spacing: -2px;
   font-size: calc(3.5rem + 3.7vw);
   text-align: right;
   line-height: 0.9;
@@ -396,8 +410,8 @@ nav ul li:last-child a {
   font-size: calc(1em - 4px);
   margin: 5px 0 0 0;
   display: block;
-  -webkit-text-stroke: 1.5px white;
-  -webkit-text-fill-color: transparent;
+  color: #080808;
+  text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
 }
 
 .text-content h2 {
@@ -463,13 +477,17 @@ nav ul li:last-child a {
   margin: 5px 0;
 }
 
+.work .project:first-child {
+  margin-top: 0;
+}
+
 .work .project:nth-child(2n) {
   text-align: right;
 }
 
 .work .project:nth-child(2n) .chevron {
   margin-right: 0;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .work .project:nth-child(2n) .details {
@@ -481,8 +499,8 @@ nav ul li:last-child a {
 
 .work .project--background {
   background-color: #3338;
-  -webkit-box-shadow: 7px 7px #077a;
-          box-shadow: 7px 7px #077a;
+  border-bottom: 1px solid #0dd;
+  border-right: 1px solid #0dd;
   top: 0;
   right: 0;
   bottom: 0;
@@ -501,7 +519,9 @@ nav ul li:last-child a {
 }
 
 .work .chevron {
-  margin-right: 10px;
+  margin-right: 5px;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
@@ -610,8 +630,8 @@ nav ul li:last-child a {
 }
 
 .work input:checked ~ label img {
-  -webkit-transform: translateY(-3px) rotateX(180deg);
-          transform: translateY(-3px) rotateX(180deg);
+  -webkit-transform: translateY(0) rotateX(180deg);
+          transform: translateY(0) rotateX(180deg);
 }
 
 .work input:checked ~ .details,
@@ -962,7 +982,7 @@ footer li a {
   transition: color 0.3s ease;
 }
 
-footer li a .far, footer li a i {
+footer li a .fas, footer li a i {
   display: block;
   padding: 4px 0;
   font-size: 2rem;

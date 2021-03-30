@@ -7,12 +7,16 @@
     padding: 10px 0;
     margin: 5px 0;
 
+    &:first-child {
+      margin-top: 0;
+    }
+
     &:nth-child(2n) {
       text-align: right;
 
       .chevron {
         margin-right: 0;
-        margin-left: 10px;
+        margin-left: 5px;
       }
 
       .details {
@@ -23,7 +27,9 @@
 
   .project--background {
     background-color: #3338;
-    box-shadow: 7px 7px #077a;
+    // box-shadow: 7px 7px #077a;
+    border-bottom: 1px solid #0dd;
+    border-right: 1px solid #0dd;
     top: 0;
     right: 0;
     bottom: 0;
@@ -41,7 +47,8 @@
   }
 
   .chevron {
-    margin-right: 10px;
+    margin-right: 5px;
+    transform: translateY(-2px);
     transition: transform 0.5s ease;
   }
 
@@ -138,7 +145,7 @@
       transform: translateY(-4px);
 
       img {
-        transform: translateY(-3px) rotateX(180deg);
+        transform: translateY(0) rotateX(180deg);
       }
     }
 

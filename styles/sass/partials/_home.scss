@@ -11,7 +11,7 @@
       font-family: 'Major Mono Display', sans-serif;
       text-transform: lowercase;
       padding-right: 20px;
-      letter-spacing: -5px;
+      letter-spacing: -2px;
       font-size: calc(3.5rem + 3.7vw);
       text-align: right;
       line-height: 0.9;
@@ -19,8 +19,11 @@
         font-size: calc(1em - 4px);
         margin: 5px 0 0 0;
         display: block;
-        -webkit-text-stroke: 1.5px white;
-        -webkit-text-fill-color: transparent;
+        color: #080808;
+        text-shadow: -1px 1px 0 #fff,
+				  1px 1px 0 #fff,
+				 1px -1px 0 #fff,
+				-1px -1px 0 #fff;
       }
     }
 
@@ -39,7 +42,6 @@
       font-size: calc(1rem + 0.8vw);
       width: 55%;
       font-weight: 300;
-      // text-align: center;
       
       span {
         font-weight: 200;

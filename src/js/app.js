@@ -6,7 +6,7 @@ addBackground();
 
 Router.init();
 
-console.log(Router);
+console.log('removed sparkle function, and prepended backgrounds');
 
 const root = document.getElementById("root");
 

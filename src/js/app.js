@@ -3,15 +3,11 @@ import Router from './modules/Router.js';
 import './packages/tranglify.bundle.js';
 
 addBackground();
-
 Router.init();
-
-console.log('added compatible gradient overlay from colorzilla');
 
 const root = document.getElementById("root");
 
 const allNavLinks = document.querySelectorAll('nav a');
-
 allNavLinks.forEach(navLink => {
     const pathname = navLink.pathname;
     navLink.onclick = (event) => {

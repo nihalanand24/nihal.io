@@ -494,6 +494,7 @@ nav ul li:last-child a {
   position: relative;
   padding: 10px 0;
   margin: 5px 0;
+  z-index: 1;
 }
 
 .work .project:first-child {
@@ -518,8 +519,8 @@ nav ul li:last-child a {
 
 .work .project--background {
   background-color: rgba(34, 34, 34, 0.67);
-  -webkit-box-shadow: 1px 1px #0dd;
-          box-shadow: 1px 1px #0dd;
+  border-bottom: 1px solid #0dd;
+  border-right: 1px solid #0dd;
   top: 0;
   right: 0;
   bottom: 0;

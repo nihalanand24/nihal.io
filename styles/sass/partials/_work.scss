@@ -198,6 +198,7 @@
         flex-direction: column-reverse;
         text-align: center;
         align-items: center;
+        transition: opacity 0.3s ease;
         .mockup {
           width: 100%;
         }
@@ -213,6 +214,16 @@
           flex-direction: column-reverse;
         }
       }
+    }
+  }
+
+  @media (hover: none) {
+    label {
+      color: #0dd;
+    }
+    .one-liner {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

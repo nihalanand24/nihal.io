@@ -685,6 +685,8 @@ nav ul li:last-child a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
   }
   .work input:checked ~ .details .mockup {
     width: 100%;
@@ -697,6 +699,16 @@ nav ul li:last-child a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+}
+
+@media (hover: none) {
+  .work label {
+    color: #0dd;
+  }
+  .work .one-liner {
+    visibility: visible;
+    opacity: 1;
   }
 }
 

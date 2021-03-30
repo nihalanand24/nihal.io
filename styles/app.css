@@ -518,8 +518,8 @@ nav ul li:last-child a {
 
 .work .project--background {
   background-color: rgba(34, 34, 34, 0.67);
-  border-bottom: 1px solid #0dd;
-  border-right: 1px solid #0dd;
+  -webkit-box-shadow: 1px 1px #0dd;
+          box-shadow: 1px 1px #0dd;
   top: 0;
   right: 0;
   bottom: 0;

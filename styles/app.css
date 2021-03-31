@@ -967,8 +967,8 @@ nav ul li:last-child a {
   color: #0aa;
   margin: 2vw 1vw;
   text-shadow: 0 0 25px rgba(0, 210, 210, 0.5);
-  -webkit-animation: flicker 3s;
-          animation: flicker 3s;
+  -webkit-animation: flicker 2s;
+          animation: flicker 2s;
 }
 
 @media (max-width: 1000px) {
@@ -980,7 +980,7 @@ nav ul li:last-child a {
 @-webkit-keyframes flicker {
   0%, 7.499%, 8.5%, 8.7%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 92.999%, 94%, 94.999%, 100% {
     text-shadow: none;
-    color: #333;
+    color: #222;
   }
   7.5%, 8.6%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999%, 93%, 93.999%, 95%, 99.999% {
     text-shadow: 0 0 25px rgba(0, 210, 210, 0.5);
@@ -991,7 +991,7 @@ nav ul li:last-child a {
 @keyframes flicker {
   0%, 7.499%, 8.5%, 8.7%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 92.999%, 94%, 94.999%, 100% {
     text-shadow: none;
-    color: #333;
+    color: #222;
   }
   7.5%, 8.6%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999%, 93%, 93.999%, 95%, 99.999% {
     text-shadow: 0 0 25px rgba(0, 210, 210, 0.5);

@@ -8,12 +8,13 @@ Router.init();
 const root = document.getElementById("root");
 
 const allNavLinks = document.querySelectorAll('nav a');
+
 allNavLinks.forEach(navLink => {
-    const pathname = navLink.pathname;
+    const path = navLink.pathname;
     navLink.onclick = (event) => {
         event.preventDefault();
-        window.history.pushState({}, pathname, window.location.origin + pathname);
-        root.innerHTML = Router.routes[pathname];
+        window.history.pushState({}, path, window.location.origin + path);
+        root.innerHTML = Router.routes[path];
     };
 })
 

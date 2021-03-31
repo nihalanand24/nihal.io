@@ -7,6 +7,9 @@ align-items: center;
 
     ul {
         display: flex;
+        justify-content: space-between;
+        padding-top: 7px;
+        border-top: 1px solid #777;
     }
     
     li {
@@ -16,6 +19,7 @@ align-items: center;
         margin: 0 1.2vw;
         
         a {
+            display: inline-block;
             color: #777;
             text-decoration: none;
             transition: color 0.3s ease;
@@ -28,7 +32,8 @@ align-items: center;
             }
 
             &:hover {
-                color: #fff;
+                color: #0dd;
+                text-shadow: 0 0 5px #0ff8;
             }
         }
         

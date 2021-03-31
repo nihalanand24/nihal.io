@@ -735,6 +735,12 @@ nav ul li:last-child a {
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
   }
+  .work input:checked ~ .details--right-align {
+    text-align: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
   .work input:checked ~ .details .mockup {
     width: 100%;
   }

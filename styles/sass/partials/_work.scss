@@ -67,7 +67,7 @@
       max-height: 0;
     }
   }
-
+  
   .mockup {
     width: 35%;
     max-width: 450px;
@@ -213,6 +213,12 @@
         text-align: center;
         align-items: center;
         transition: opacity 0.3s ease;
+
+        &--right-align {
+          text-align: right;
+          align-items: flex-end;
+        };
+
         .mockup {
           width: 100%;
         }

@@ -5,7 +5,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nihal Anand - Web Developer</title>
+  <title>Nihal Anand - Front-end Web Developer</title>
+
+  <meta property="og:title" content="Nihal Anand - Front-end Web Developer">
+  <meta property="og:description" content="Toronto-based web developer, specializing in creating responsive and visually cohesive web applications.">
+  <meta property="og:image" content="https://res.cloudinary.com/nihalanand/image/upload/v1619316839/OG-Image_l7njdi.png">
+  <meta property="og:url" content="https://nihal.io">
+
+
   <base href="/">
   <link rel="shortcut icon" href="/assets/Netscape_icon.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
@@ -67,7 +74,8 @@
   </div>
   <script type='module' src="/src/js/app.js"></script>
   <script>
-    const page = '/pages/work.html';
+    const pathname = window.location.pathname === '/' ? 'home' : window.location.pathname.slice(1, -1);
+    const page = `/pages/${pathname}.html`;
     const root = document.getElementById('root');
     fetch(page)
       .then(res => res.text())
